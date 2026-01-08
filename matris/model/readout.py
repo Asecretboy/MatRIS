@@ -7,7 +7,6 @@ from typing import  Literal, Union, Sequence
 from .functions import (
     MLP, 
     GatedMLP,
-    SwishLayer,
     GraphPooling,
     reshape_stress,
     Sphere,

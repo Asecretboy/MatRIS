@@ -1,7 +1,7 @@
 from ase import Atoms, units
 from ase.calculators.calculator import Calculator, all_changes, all_properties
 import numpy as np
-
+import pickle
 from ..model.model import MatRIS
 
 from pymatgen.io.ase import AseAtomsAdaptor

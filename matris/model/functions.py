@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from collections.abc import Sequence
-
+from typing import Literal
 import torch
 from torch import Tensor, nn
 import math

@@ -9,14 +9,11 @@ from ..graph import RadiusGraph, GraphConverter, datatype
 from .reference_energy import AtomRef
 from .processgraph import process_graphs
 from .feature_embed import (
-    ThreebodyFourierExpansion, 
     AtomTypeEmbedding, 
     EdgeBasisEmbedding, 
     ThreebodyEmbedding
 )
 from .functions import (
-    MLP,
-    GatedMLP,
     get_normalization
 )
 from .interaction_block import Interaction_Block

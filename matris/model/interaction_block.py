@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import torch
 from torch import Tensor, nn
-from typing import Any, Dict
+from typing import Tuple, Dict, Literal
 from .functions import (
     MLP,
     GatedMLP,

@@ -1,5 +1,3 @@
-import ase
-from ase.build import bulk
 import torch
 from pymatgen.core.structure import Structure
 from matris.applications.relax import StructOptimizer

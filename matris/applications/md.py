@@ -1,14 +1,9 @@
 """ Modified from CHGNet: https://github.com/CederGroupHub/chgnet """
 from __future__ import annotations
 
-import inspect
-import sys
-import io
-import contextlib
+import numpy as np
 from ase import Atoms, units
 from ase.io import Trajectory
-from ase.optimize.optimize import Optimizer
-import ase.filters as filter_classes
 from ase.filters import Filter
 from pymatgen.io.ase import AseAtomsAdaptor
 from pymatgen.core.structure import Structure, Molecule
@@ -19,12 +14,9 @@ from ase.md.nvtberendsen import NVTBerendsen
 from ase.md.velocitydistribution import MaxwellBoltzmannDistribution, Stationary
 from ase.md.verlet import VelocityVerlet
 
-from ..model.model import MatRIS
-
 from .base import (
     OPTIMIZERS,
     MatRISCalculator, 
-    TrajectoryObserver,
     CrystalFeasObserver
 )
 
